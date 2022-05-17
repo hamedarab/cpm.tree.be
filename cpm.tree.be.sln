@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cpm.tree.WebAppMvcMsIdentit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cpm.tree.WebAppMvcIndividualAccount", "cpm.tree.WebAppMvcIndividualAccount\cpm.tree.WebAppMvcIndividualAccount.csproj", "{DE74B4D7-D689-4363-8CF5-8067F77422ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cpm.tree.WebAppMvcWindows", "cpm.tree.WebAppMvcWindows\cpm.tree.WebAppMvcWindows.csproj", "{1F9B0E63-9513-435F-B7B2-79C5EE6E53A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{DE74B4D7-D689-4363-8CF5-8067F77422ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE74B4D7-D689-4363-8CF5-8067F77422ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE74B4D7-D689-4363-8CF5-8067F77422ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9B0E63-9513-435F-B7B2-79C5EE6E53A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9B0E63-9513-435F-B7B2-79C5EE6E53A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9B0E63-9513-435F-B7B2-79C5EE6E53A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9B0E63-9513-435F-B7B2-79C5EE6E53A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
