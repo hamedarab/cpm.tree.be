@@ -1,3 +1,5 @@
+using Microsoft.OpenApi.Models;
+
 namespace cpm.tree.WebApiWebApp2
 {
     public class Program
@@ -21,6 +23,8 @@ namespace cpm.tree.WebApiWebApp2
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
+                app.UseDeveloperExceptionPage();
+
             }
             //if (env.IsDevelopment())
             //{
@@ -44,9 +48,7 @@ namespace cpm.tree.WebApiWebApp2
             //if authentication service is added // app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
-            //app.MapControllerRoute(
-            //    name: "default",
-            //    pattern: "{controller=Home}/{action=Index}/{id?}");
+            //uncomment when needed - app.MapDefaultControllerRoute(); //TOREMOVE app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
         }
 
         private static void AddServicesToContainer(WebApplicationBuilder builder)
@@ -77,9 +79,10 @@ namespace cpm.tree.WebApiWebApp2
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            //services.AddSwaggerGen(c =>
+            //TODO: add following code 
+            //builder.services.AddSwaggerGen(c =>
             //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "cpm.tree.WebApi", Version = "v1" });
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "CPM Security Management API", Version = "v1" });
             //});
         }
     }
